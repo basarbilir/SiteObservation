@@ -4,7 +4,7 @@
   padding: $s-size;
   font-weight: bold;
   font-size: $m-size;
-  color: white
+  color: white;
 }
 
 .order-div {
@@ -22,14 +22,14 @@
   width: 33.33%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
-  background: #86929e
+  background: #86929e;
 }
 .column-div2 {
   float: left;
   width: 66.66%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
-  background: #86929e
+  background: #86929e;
 }
 
 /* Clear floats after the columns */
@@ -43,21 +43,25 @@
   background: #f2c40f;
   // margin: $s-size;
   height: 70%;
+  border-radius: 15px;
 }
 
 .brokenWidget {
   background: #e84c3d;
   height: 70%;
+  border-radius: 15px;
 }
 
 .maintenancedWidget {
   background: #e67f22;
   height: 70%;
+  border-radius: 15px;
 }
 
 .widget {
   background: #2a81b9;
   height: 70%;
+  border-radius: 15px;
 }
 
 .h3Class {
@@ -106,7 +110,6 @@
   color: white;
 }
 
-
 // close button
 
 .close {
@@ -120,10 +123,11 @@
 .close:hover {
   opacity: 1;
 }
-.close:before, .close:after {
+.close:before,
+.close:after {
   position: absolute;
   left: 15px;
-  content: ' ';
+  content: " ";
   height: 33px;
   width: 4px;
   background-color: #333;

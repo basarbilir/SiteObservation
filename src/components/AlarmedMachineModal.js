@@ -8,8 +8,8 @@ const AlarmedMachineModal = props => (
       contentLabel="Information Box"
       closeTimeoutMS={200}
     >
-      <a onClick={props.handleClearSelectedBox} href="#" className="close"/>
-      <div>
+      <a onClick={props.handleClearSelectedBox} href="#" className="close" />
+      <div className="react-modal-class">
         <h1 id="title">Alarmlı Makina Bilgisi</h1>
         <table id="students">
           <tbody>
@@ -25,7 +25,11 @@ const AlarmedMachineModal = props => (
                     <td>{line}</td>
                     <td>{machine}</td>
                     <td>{keyParameter}</td>
-                    <td>{moment.unix(valueParameter/1000).format("HH:mm / DD.MM.YYYY")}</td>
+                    <td>
+                      {moment
+                        .unix(valueParameter / 1000)
+                        .format("HH:mm / DD.MM.YYYY")}
+                    </td>
                   </tr>
                 );
               })
