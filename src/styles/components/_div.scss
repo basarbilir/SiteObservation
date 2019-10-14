@@ -1,0 +1,136 @@
+.top-div {
+  background: #2e4054;
+  text-align: center;
+  padding: $s-size;
+  font-weight: bold;
+  font-size: $m-size;
+  color: white
+}
+
+.order-div {
+  width: 33.33%; /* three boxes (use 25% for four, and 50% for two, etc) */
+}
+
+// .row-div {
+//   background: black;
+//   text-align: center;
+//   float: left;
+// }
+
+.column-div {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  background: #86929e
+}
+.column-div2 {
+  float: left;
+  width: 66.66%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  background: #86929e
+}
+
+/* Clear floats after the columns */
+.row-div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.alarmWidget {
+  background: #f2c40f;
+  // margin: $s-size;
+  height: 70%;
+}
+
+.brokenWidget {
+  background: #e84c3d;
+  height: 70%;
+}
+
+.maintenancedWidget {
+  background: #e67f22;
+  height: 70%;
+}
+
+.widget {
+  background: #2a81b9;
+  height: 70%;
+}
+
+.h3Class {
+  margin: 3rem auto 2rem auto;
+  padding-top: 2rem;
+}
+
+.h1Class {
+  margin: 8rem auto 1rem auto;
+  font-size: 2.7rem;
+}
+
+#title {
+  text-align: center;
+  font-family: arial, sans-serif;
+  background: orange;
+}
+
+#students {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 100%;
+}
+
+#students td,
+#students th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#students tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#students tr:hover {
+  background-color: #ddd;
+}
+
+#students th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+}
+
+
+// close button
+
+.close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 4px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
